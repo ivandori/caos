@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Caos e frattali - Esempi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="questo è un sito web responsive che prova a spiegare cosa sono il caos deterministico e i frattali, realizzato utilizzando solo html e css puro.">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link type="text/css" rel="stylesheet" href="css/media_queries.css"/> <!-- media queries -->
+    <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/> <!-- icon fonts -->
+    <link rel="icon" href="images/cropped-logo_ivano_finale_stampa-32x32.png" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <figure><img  class="logo" src="images/logo_ivano_finale_stampa-300x66.png" alt="Ivano Dorigatti" width=100px></figure>
+        </header>
+        <nav>
+            <label for="showMenu" class="showMenu">
+                <i class="fa fa-align-justify fa-lg"></i>
+              </label>
+              <input type="checkbox" id="showMenu" role="button">
+            <ul id="menu">
+                <li><a href="home.html" title="Home">Home</a></li>
+                <li><a href="caos.html" title="Introduzione">Introduzione al caos</a></li>
+                <li><a class="voceselezionata" href="#" title="Esempi">Esempi reali</a></li>
+                <li><a href="ordine.html" title="Ordine">Ordine nel caos</a></li>
+                <li><a href="frattali.html" title="Frattali">I frattali</a></li>
+            </ul>
+        </nav>
+        <figure><img src="images/dadi_lumi_2_ok-600x522.jpg" class="img" alt="dadi"></figure>
+        <div id="container">
+            <div id="content">
+                <article class="post">
+                    <h2 class="entry-title">ESEMPI CAOTICI REALI</h2>
+                    <div class="entry-content">
+                        <p>Sia la storia che la didattica della fisica sono piene di esempi
+                            non lineari, tanto che si è portati a credere che i sistemi non
+                            lineari siano un'eccezione. Ma è vero piuttosto il contrario!<br />
+                        </p>
+                        <p><strong>Nella realtà i sistemi non lineari sono la regola e i fenomeni caotici
+                                sono estremamente frequenti.</strong></p>
+                        <p>Sono tanti gli esempi di caos presenti nel mondo reale: il
+                            tempo meteorologico, la formazione delle nuvole, la fibrillazione del
+                            cuore umano, la turbolenza nel flusso dei fluidi, il movimento di un
+                            semplice pendolo attratto da alcuni magneti, le oscillazioni delle
+                            azioni della borsa valori, la configurazione delle linee costiere, il
+                            moto dei satelliti di forma irregolare, le traiettorie dei meteoriti,
+                            l'orbita irregolare di Plutone, la formazione degli anelli di
+                            Saturno, il moto turbolento della Grande Macchia Rossa di Giove, le
+                            variazioni nelle popolazioni di animali, la propagazione dei virus
+                            (AIDS), le scariche elettriche dei neuroni del cervello, il
+                            gocciolamento di un rubinetto, le traiettorie irregolari del volo a
+                            zig-zag di una mosca, il movimento degli occhi nei schizofrenici, le
+                            transizioni di fase dei corpi, la formazione dei fiocchi di neve,
+                            eccetera.
+                        </p>
+                        <p>Vediamo in dettaglio qualcuno di questi esempi:
+                        </p>
+                        <ul>
+                            <li>
+                                il pendolo
+                            <li>
+                                la ruota idraulica
+                            <li>
+                                il rubinetto gocciolante
+                            <li>
+                                il tempo meteorologico
+                            <li>
+                                il sistema solare
+                        </ul>
+                        <h3>CAOS E PENDOLI</h3>
+                        <p> <em>Anche in un sistema apparentemente semplice esiste il caos.</em>
+                        </p>
+                        <figure>
+                            <img class="img" src="images/clock-6532622_1280.jpg" name="Pendolo" alt="PENDOLO" />
+                        </figure>
+                        <p>Esistono sistemi apparentemente semplici, trattabili con equazioni
+                            semplici, in cui però è praticamente impossibile determinarne il
+                            comportamento futuro. Uno di questi è un pendolo composto da un filo
+                            a cui è appesa una sferetta di ferro; sul piano orizzontale sotto il
+                            pendolo sono disposte tre calamite uguali, poste ai vertici di un
+                            triangolo equilatero. Se lasciamo andare la sferetta da una posizione
+                            qualsiasi, essa oscillerà in maniera irregolare, guidata dalla forza
+                            peso e dalle forze magnetiche che la attraggono verso ciascuna delle
+                            calamite.
+                        </p>
+                        <p><img class="centro" src="images/pendolo_e_calamite.gif" name="Pendolo e 3 calamite"
+                                alt="Pendolo e 3 calamite" />
+                        </p>
+                        <p>A causa degli attriti finirà poi per fermarsi in una delle tre
+                            posizioni di equilibrio possibili, al di sopra di una calamita.
+                        </p>
+                        <p class="centro">
+                            <img src="images/pendolo_attratto_da_calamita_rossa.gif"
+                                name="Pendolo attratto da calamita rossa" alt="Pendolo attratto da calamita rossa" />
+                            <img src="images/pendolo_attratto_da_calamita_verde.gif"
+                                name="Pendolo attratto da calamita verde" alt="Pendolo attratto da calamita verde" />
+                            <img src="images/pendolo_attratto_da_calamita_viola.gif"
+                                name="Pendolo attratto da calamita viola" alt="Pendolo attratto da calamita viola" />
+                        </p>
+                        <p>E' possibile predire sopra quale calamita si arresta il pendolo a
+                            partire da una posizione iniziale assegnata?<br />
+                            La meccanica
+                            classica, essendo deterministica ci farebbe rispondere di sì.</p>
+                        <p>Immaginiamo di osservare il pendolo dall'alto e di assegnare uno
+                            di tre colori diversi ad ogni posizione iniziale secondo quale
+                            risulta essere la posizione finale (ad esempio rosso per la calamita
+                            1, verde per la calamita 2, blu per la calamita 3), in modo da
+                            ottenere un disegno bidimensionale.
+                        </p>
+                        <p>Ciò che ci si aspetta di vedere
+                            sono tre zone colorate nettamente distinte fra di loro. Non è così!
+                            Accanto a zone di colore uniforme si hanno zone ampie di colore non
+                            ben definito, in cui i punti colorati si dispongono in strisce e
+                            macchie di diverse forme e dimensioni.</p>
+                        <p><img class="centro" src="images/traiettorie_pendolo.gif" name="Traiettorie pendolo"
+                                alt="Traiettorie pendolo" />
+                        </p>
+                        <p>La situazione non migliora nemmeno aumentando la precisione delle
+                            misure.
+                        </p>
+                        <p><img class="centro" src="images/traiettorie_pendolo_piu_precise.gif"
+                                name="Traiettorie pendolo più precise" alt="Traiettorie pendolo più precise" />
+                        </p>
+                        <p>Possiamo simulare facilmente questo tipo di sistemi con l'aiuto di
+                            un computer, ma anche qui, per quanto piccoli, siamo in presenza di
+                            errori nella determinazione delle posizioni iniziali.
+                        </p>
+                        <p><strong>Il CAOS è quindi una conseguenza dell'impossibilità di avere una
+                                precisione infinita nella determinazione della posizione iniziale.</strong></p>
+                        <p><em>Punti che sono molto vicini tra di loro portano a posizioni finali
+                                totalmente diverse!</em></p>
+                        <h3>LA RUOTA IDRAULICA DI LORENZ</h3>
+                        <em>Secchi che si riempiono e si svuotano possono dare il caos</em>
+                        <figure><img class="centro" src="images/ruota_idraulica_Lorenz.gif" name="Ruota idraulica di Lorenz"
+                                alt="RUOTA IDRAULICA DI LORENZ" />
+                        </figure>
+                        <p>Il primo famoso sistema caotico scoperto da Edward Lorenz
+                            corrisponde esattamente ad un dispositivo meccanico: <em>una ruota
+                                idraulica</em>. Questo semplice dispositivo si dimostra capace di un
+                            comportamento sorprendentemente complicato.</p>
+                        <p>Sopra la parte centrale
+                            della ruota idraulica cade dell'acqua ad un ritmo costante.</p>
+                        <ol>
+                            <li>Sopra la parte centrale
+                                della ruota idraulica cade dell'acqua ad un ritmo costante. Se il
+                                flusso dell'acqua che va a cadere nel secchio alla sommità della
+                                ruota è lento, il secchio non si riempie mai abbastanza per
+                                superare l'attrito, e la ruota non comincia mai a girare.
+                            </li>
+                            <li>Se il flusso è più
+                                veloce, il peso del secchio in alto mette in movimento la ruota.
+                                La ruota idraulica inizia un movimento che continua a velocità
+                                costante.</li>
+                            <li>Se però il flusso è
+                                ancora più veloce, la rotazione diventa<strong> caotica</strong>, a causa degli
+                                effetti non lineari intrinseci al sistema. Quando i secchi passano
+                                sotto la caduta d'acqua, in quale misura si riempiono dipende
+                                dalla velocità della rotazione. Se la ruota sta girando
+                                rapidamente, i secchi hanno poco tempo per riempirsi. Inoltre, se
+                                la ruota gira rapidamente i secchi possono salire dall'altra parte
+                                prima di avere avuto il tempo di svuotarsi completamente. Di
+                                conseguenza, il peso dell'acqua contenuta nei secchi che stanno
+                                risalendo farà prima rallentare e poi diminuire la rotazione. In
+                                effetti, come scoprì Lorenz, su lunghi periodi la rotazione può
+                                invertirsi molte volte, non passando mai a una velocità costante
+                                e non ripetendosi mai in modo prevedibile.</li>
+                            </ul>
+                            <div class="wrapper">
+                                <div class="box">
+                                    <figure><img src="images/punto_fisso.png" name="Attrattore punto fisso"
+                                            alt="ATTRATTORE PUNTO FISSO" />
+                                        <p>1. Punto fisso </p>
+                                    </figure>
+                                </div>
+                                <div class="box">
+                                    <figure><img src="images/ciclo_limite.png" name="Attrattore ciclo limite"
+                                            alt="ATTRATTORE CICLO LIMITE" />
+                                        <p>2. Ciclo limite </p>
+                                    </figure>
+                                </div>
+                                <div class="box">
+                                    <figure><img src="images/attrattore_strano.png" name="Attrattore strano"
+                                            alt="ATTRATTORE STRANO" />
+                                        <p>3. Attrattore strano </p>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="centro">
+                                <figure><img src="images/diagramma_di_biforcazione.png" name="Diagramma biforcazione"
+                                        alt="DIAGRAMMA BIFORCAZIONE" title="Diagramma biforcazione" />
+                                    <p>Diagramma di biforcazione</p>
+                                </figure>
+                            </div>
+                            <h3>IL CAOS NEL RUBINETTO CHE GOCCIOLA</h3>
+                            <p><em>Il comportamento delle gocce può essere di tipo caotico.</em>
+                            </p>
+                            <figure><img class="centro" src="images/rubinetto_gocciolante.gif" name="Rubinetto gocciolante"
+                                    alt="Rubinetto gocciolante" />
+                            </figure>
+                            <p>Molti sanno che le gocce che cadono da un rubinetto che gocciola
+                                presentano un andamento periodico. L'intervallo fra due gocce
+                                successive può essere regolarissimo, e molti, nelle notti di
+                                insonnia, sono stati con l'orecchio teso ad aspettare che cadesse la
+                                goccia successiva. Meno noto è il comportamento di un rubinetto
+                                quando la velocità del flusso è un po' più elevata. Si può spesso
+                                individuare un regime in cui in cui le gocce, pur cadendo sempre
+                                separate, cadono con un ritmo che non si ripete mai, come un tamburo
+                                che improvvisi cadenze sempre nuove. E' un esperimento che chiunque
+                                può effettuare facilmente; i rubinetti senza frangigetto funzionano
+                                meglio. Facendo cadere le gocce da un normale rubinetto su un
+                                microfono è possibile registrare i corrispondenti impulsi sonori.
+                            </p>
+                            <p>Un grafico in cui gli intervalli fra le gocce siano riportati a
+                                coppie è uno strumento efficace per ricavare una sezione
+                                dell'attrattore soggiacente.
+                            </p>
+                            <p>Il risultato più interessante dell'esperimento è che nel regime
+                                non periodico si trovano attrattori caotici.
+                            </p>
+                            <p>
+                                <strong> Il fatto che nei grafici
+                                    compaiono delle strutture dimostra che l'aleatorietà possiede una
+                                    base deterministica.
+                                </strong>
+                            </p>
+                            <p>In particolare molti gruppi di dati hanno una
+                                forma a ferro di cavallo.
+                            </p>
+                            <div class="centro">
+                                <img src="images/attrattore_di_henon.gif" name="Attrattore di Henon"
+                                    alt="ATTRATTORE DI HENON" />
+                                <img src="images/attrattore_di_henon_zoom1.gif"
+                                    name="Ingrandimento 1 attrattore di Henon"
+                                    alt="Ingrandimento 1 ATTRATTORE DI HENON" />
+                                <img src="images/attrattore_di_henon_zoom2.gif"
+                                    name="Ingrandimento 2 attrattore di Henon"
+                                    alt="Ingrandimento 2 ATTRATTORE DI HENON" />
+                            </div>
+                            <h3>IL CAOS CHE CHIAMIAMO TEMPO METEOROLOGICO</h3>
+                            <blockquote>
+                                <em>
+                                    Una farfalla sbatte le sue ali nella foresta del Sud America, può
+                                    causare un uragano in Cina.
+                            </em>
+                            </blockquote>
+                            <img src="images/farfalla.gif" name="Farfalla"
+                            alt="FARFALLA" class="icona"/>
+                            <figure><img class="img" src="images/meteo.jpg"
+                                    name="Meteo" alt="METEO" />
+                            </figure>
+                            <p>Le previsioni del tempo fanno parte di ogni
+                                notiziario. Vengono date per tre, forse quattro giorni. E talvolta
+                                non sono nemmeno esatte! Ma perché non si possono dare per una
+                                settimana, o per un mese?
+                            </p>
+                            <p>Ci sono molte variabili associate al tempo: temperatura, pressione
+                                dell'aria, velocità del vento, direzione del vento, umidità e molte
+                                altre. Le equazioni che governano il tempo coinvolgono tutte queste
+                                variabili.
+                            </p>
+                            <p>Si possono mettere accuratamente tutte queste variabili in
+                                un'equazione e calcolare, con qualche grado di incertezza il valore
+                                di tutte le variabili al secondo passo. Questi risultati possono
+                                essere rimessi nell'equazione e trovare dunque i valori al passo
+                                successivo. Lasciamo al computer il compito di eseguire le iterazioni
+                                per un tempo sufficientemente lungo e sapremo che tempo farà tra un
+                                mese. O no?
+                            </p>
+                            <p>
+                                <img class="centro" src="images/iterazione.gif"
+                                    name="Iterazione" alt="ITERAZIONE" />
+                            </p>
+                            <p>Un meteorologo,<strong> Edward Lorenz</strong>, provò a farlo. Lorenz decise di
+                                far girare il programma più a lungo. Per far questo utilizzò due
+                                sistemi. Prima lasciò che ci pensasse il computer, successivamente
+                                immise i valori troncati alla terza cifra decimale contro le sei
+                                disponibili. Il risultato fu che le due conclusioni furono
+                              <strong>completamente differenti</strong>. La differenza di uno su mille era
+                                abbastanza per cambiare significativamente l'output.
+                            </p>
+                            <figure><img class="centro" src="images/confronto_traiettorie.png"
+                                    name="Confronto traiettorie" alt="Confronto traiettorie" />
+                            </figure>
+                            <p>E' quella che si chiama <strong> dipendenza sensibile dalle condizioni
+                                    iniziali</strong>. In termini di tempo, questo significa che
+                                <strong>il caos limita il periodo di tempo in cui si possono fare
+                                    previsioni meteorologiche!</strong>
+                            </p>
+
+                            <p>Lorenz coniò il termine <em>Effetto Farfalla</em> per descrivere questa
+                                sensibilità allo stato di partenza del processo.
+                            </p>
+
+                            <h3>IL CAOS NEL SISTEMA SOLARE
+                            </h3>
+                            <p><em>L' Universo non è un gigantesco orologio, infatti nel Sistema
+                                    Solare esiste il caos.</em>
+                            </p>
+                            <figure><img class="img" src="images/sistema-solare.jpg"
+                                    name="Sistema Solare" alt="SISTEMA SOLARE" />
+                            </figure>
+
+                            <h4>Il capitombolare caotico di Hyperion</h4>
+                            <figure><img class="centro img4" src="images/922px-Hyperion_true.jpg"
+                                    name="Hyperion" alt="HYPERION" />
+                            </figure>
+                            <p>
+                                Il capitombolare caotico di Hyperion, uno dei satelliti più
+                                distanti di Saturno, con un'orbita di
+                                periodo 21 giorni, offre uno dei più drammatici esempi fisici di
+                                <strong>comportamento caotico</strong>.
+                            </p>
+                            <p>La causa principale del comportamento di Hyperion è la sua forma
+                                irregolare, oltre ad una grande eccentricità nell'orbita. La forma
+                                irregolare del satellite soggetto ad una attrazione gravitazionale
+                                non uniforme, causa un momento torcente, che è oltretutto fortemente
+                                dipendente dal tempo a causa dell'elevata eccentricità dell'orbita.
+                            </p>
+                            <p>La rivoluzione caotica di Hyperion è ben illustrata in un modello
+                                semplificato. In questo modello l'orbita di Hyperion è supposta
+                                essere un'ellisse; il periodo di rotazione è molto più corto del
+                                periodo dell'orbita; l'asse di rotazione viene supposto essere
+                                perpendicolare al piano dell'orbita. Ne risulta un'equazione del moto
+                                ad un solo grado di libertà, che ha come variabile un angolo, che è
+                                quella di un pendolo. Analizzando questa equazione si trovano zone
+                                caotiche abbastanza ampie che hanno attitudine all'instabilità.
+                            </p>
+                            <h4>I satelliti di
+                                Marte</h4>
+                            
+                                <figure>
+                                <img class="centro img4" src="images/phobos_deimos.jpg" name="Phobos e Deimos"
+                                    alt="Phobos e Deimos" title="Phobos e Deimos"   />
+                                </figure>
+                            <p>Phobos, un satellite di
+                                Marte, è di forma
+                                irregolare come Hyperion, ma la sua eccentricità dell'orbita è
+                                invece bassa, come anche Deimos, l'altro satellite di Marte, che ha
+                                un'eccentricità dell'orbita veramente piccola. Tuttavia, compiendo
+                                un'analisi della stabilità simile a quella per Hyperion, risulta che
+                                <strong> la zona caotica non è per niente microscopica</strong>. Anche questa zona
+                                caotica ha attitudine di instabilità, come Hyperion.
+                            </p>
+                            <p>Tutti i satelliti di forma irregolarmente non sferica che ruotano
+                                sincronizzati devono aver trascorso un periodo di tempo
+                                capitombolando caoticamente. Il tempo che hanno trascorso in queste
+                                condizioni deve essere comparabile con il tempo di aggiustamento
+                                della rotazione.
+                            </p>
+                            <h4>Il gap di Kirkwood </h4>
+                            <figure><img class="centro img4" src="images/600px-Kirkwood-20060509.png"
+                                    name="Gap di Kirkwood asteroidi" alt="Gap di Kirkwood asteroidi"   />
+                            </figure>
+                            <p>La distribuzione del semiasse maggiore degli asteroidi non è
+                                uniforme; ci sono parecchi gap. Mediante simulazione numerica
+                                effettuata su lunghi periodi di tempo, si è osservato che le orbite
+                                degli asteroidi subiscono una variazione dell'eccentricità nel
+                                tempo.
+                            </p>
+                            <p>Nel corso di milioni di anni periodi caratterizzati da alta
+                                eccentricità sono intervallati da periodi di bassa eccentricità e
+                                tali variazioni sembrano succedersi ad intervalli irregolari. In
+                                entrambi i casi<strong> la caratteristica delle traiettorie è di tipo
+                                    caotico</strong>. I grandi incrementi di eccentricità sono importanti per la
+                                formazione dei gap perché nella locazione dei gap le eccentricità
+                                maggiori di 0.3 incrociano l'orbita del pianeta Marte. Gli asteroidi
+                                di questo tipo possono essere rimossi da incontri ravvicinati o
+                                collisioni con Marte.
+                            </p>
+                            <h4>Il trasporto di meteoriti</h4>
+                            <figure><img class="centro img4" src="images/meteorite.jpg"
+                                    name="Meteoriti" alt="METEORITI"  />
+                            </figure>
+                            <p>Non è ancora ben chiara l'origine di questi sassi che contengono
+                                molte informazioni circa la formazione del sistema solare. Si ritiene
+                                abbiano origine nella cintura degli asteroidi, ma ciò che manca è
+                                un meccanismo dinamico che sia in grado di prevederne la formazione.
+                            </p>
+                            <p>Tuttavia esistono simulazioni numeriche di tipo casuale che
+                                prevedono moto tridimensionale e che includono variazioni dell'orbita
+                                del pianeta Giove come risulta dalle perturbazioni degli altri
+                                pianeti, danno come risultato<strong> asteroidi con orbite caotiche</strong> di grande
+                                eccentricità che possono attraversare l'orbita della Terra e dare
+                                collisioni dirette.
+
+                            </p>
+                            <h4>I pianeti esterni e Plutone</h4>
+                            <figure>
+                                <img class="centro img4" src="images/540px-Nh-pluto-in-true-color_2x.jpg"
+                                    name="Plutone" alt="PLUTONE" />
+
+                            </figure>
+                            <p>Il Sistema Solare è stabile? La stabilità dell'attuale Sistema
+                                Solare rimane sconosciuta. Certamente la grande età del Sistema
+                                Solare porterebbe a pensare che lo sia, ma piccole instabilità
+                                potrebbero essere ancora presenti. Ad esempio nel moto degli
+                                asteroidi piccole instabilità possono portare ad improvvisi
+                                cambiamenti dell'orbita.
+                            </p>
+                            <p>Il moto di Plutone è straordinariamente complicato. L'orbita di
+                                Plutone è unica tra i pianeti. E' sia eccentrica (e=0.25) che
+                                inclinata (i=16°). Le orbite di Nettuno e Plutone si incrociano,
+                                tuttavia la risonanza assicura che i due pianeti non si avvicinino
+                                mai. Esaminando la variazione dell'inclinazione di Plutone nell'arco
+                                di milioni di anni<strong> non risultano esserci periodicità</strong> per cui si
+                                pensa che il comportamento sia<strong> caotico</strong>, anche se il periodo di tempo
+                                considerato potrebbe essere ancora breve.
+                            </p>
+                            <h4>La Grande Macchia Rossa di Giove</h4>
+                            <figure><img class="centro img4" src="images/macchia_rossa_Giove.jpg"
+                                    name="Macchia rossa Giove" alt="Macchia rossa Giove"  /></figure>
+                            <p>Si tratta di un grande ovale vorticoso, di una tempesta gigantesca
+                                che non si muove e non si esaurisce mai. Il pianeta gigante ha una
+                                rotazione rapida, col periodo di 10 ore terrestri. La grande velocità
+                                di rotazione produce una grande <em>forza di Coriolis</em>, la forza laterale
+                                che spinge una persona che cammini attraverso una giostra, e la forza
+                                di Coriolis mantiene in movimento la macchia.
+                            </p>
+                            <p>Utilizzando le leggi della dinamica si può dunque sviluppare un
+                                modello matematico, fatto di equazioni non lineari, di questo<em> sistema
+                                    meteorologico extraterrestre</em> ed eseguirne una simulazione su
+                                computer. Ne risulta che la macchia è un sistema che si
+                                auto-organizza, creato e regolato dalle stesse variazioni non lineari
+                                che creano la turbolenza imprevedibile attorno ad essa. E' un<strong> caos
+                                    stabile</strong>.
+                            </p>
+                    </div>
+                </article>
+                <hr>
+            </div>
+        </div>
+        <footer>
+            <div id="sitemap">
+                <a href="home.html" title="Home page caos e frattali"> Home</a> |
+                <a href="caos.html" title="Introduzione al caos"> Introduzione</a> |
+                <a href="esempi.html" title="Esempi reali di caos"> Esempi</a> |
+                <a href="ordine.html" title="Ordine nel caos"> Ordine</a> |
+                <a href="frattali.html" title="I frattali"> Frattali</a> |
+            </div>
+            <p><a href="https://ivanodorigatti.blogspot.com" title="Sito web realizzato da Ivano Dorigatti"> Ivano
+                    Dorigatti</a></p>
+        </footer>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

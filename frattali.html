@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Caos e frattali - I frattali</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="questo è un sito web responsive che prova a spiegare cosa sono il caos deterministico e i frattali, realizzato utilizzando solo html e css puro.">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link type="text/css" rel="stylesheet" href="css/media_queries.css"/> <!-- media queries -->
+    <link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/> <!-- icon fonts -->
+    <link rel="icon" href="images/cropped-logo_ivano_finale_stampa-32x32.png" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <figure><img  class="logo" src="images/logo_ivano_finale_stampa-300x66.png" alt="Ivano Dorigatti" width=100px></figure>
+        </header>
+        <nav>
+            <label for="showMenu" class="showMenu">
+                <i class="fa fa-align-justify fa-lg"></i>
+              </label>
+              <input type="checkbox" id="showMenu" role="button">
+            <ul id="menu">
+                <li><a href="home.html" title="Home">Home</a></li>
+                <li><a href="caos.html" title="Introduzione">Introduzione al caos</a></li>
+                <li><a href="esempi.html" title="Esempi">Esempi reali</a></li>
+                <li><a href="ordine.html" title="Ordine">Ordine nel caos</a></li>
+                <li><a class="voceselezionata" href="#" title="Frattali">I frattali</a></li>
+            </ul>
+        </nav>
+        <figure><img src="images/1024px-Mandel_zoom_14_satellite_julia_island.jpg" class="img" alt="frattale"></figure>
+        <div id="container">
+            <div id="content">
+                <article class="post">
+                    <h2 class="entry-title">I FRATTALI, FRONTIERE DEL CAOS</h2>
+                    <div class="entry-content">
+                        <p>La
+                            parola <em>fractal</em> (in italiano <em>frattale</em>) è stata coniata nel
+                            1979 da <b>Benoit Mandelbrot</b>, un matematico dell'IBM.<br />
+                            Due
+                            proprietà principali di tali oggetti sono la <em>self-similarity</em>
+                            (l'autosomiglianza) e la <em>fractional dimension</em> (dimensione
+                            frazionaria o frattale).
+                        </p>
+
+                        <h3>L'autosomiglianza</h3>
+                        <p>Una figura viene chiamata<strong> autosimile</strong> se può essere suddivisa in
+                            un gran numero di parti ognuna delle quali è un'esatta replica in
+                            scala ridotta dell'originale. Alcuni esempi di tali figure, chiamate
+                            <em>snowflakes curves</em> (curve a fiocco di neve), sono state inventate
+                            circa cento anni fa.
+                        </p>
+                        <figure>
+                            <img class="centro img4" src="images/fiocco_di_neve.gif" name="Fiocco di neve"
+                                alt="FIOCCO DI NEVE" />
+                        </figure>
+                        <p>La curva a
+                            fiocco di neve si ottiene mettendo insieme un numero infinito di
+                            triangoli equilateri sempre più piccoli. La figura finale ha in
+                            comune con un fiocco di neve sia la simmetria che la
+                            delicatezza.
+                        </p>
+                        <p>
+                            La frontiera (contorno) di tale figura è in
+                            effetti quella che viene chiamata curva a fiocco di neve. Non è
+                            autosimile nella sua interezza ma è composta di tre parti,
+                            identiche a meno della scala, ed ognuna autosimile.
+                        </p>
+                        <p>
+                            L'esempio
+                            forse più noto è una linea di costa. Contrariamente alle curve
+                            matematiche di solito studiate in fisica, che sembrano molto
+                            regolari (diritte) se sufficientemente ingrandite, una linea
+                            costiera appare piena di rientranze ed estroflessioni
+                            indipendentemente dalla scala utilizzata.
+                        </p>
+
+
+                        <h3>La dimensione frazionaria o frattale</h3>
+                        <p>La dimensione frazionaria o frattale è un concetto più
+                            raffinato. L'idea fondamentale è che entità come la curva a fiocco
+                            di neve siano in qualche senso unidimensionali, ma al tempo stesso
+                            troppo circonvolute per poter essere chiamate curve nel senso
+                            corrente in matematica. Per trovare la dimensione della curva a
+                            fiocco di neve si procede in questo modo:
+                        </p>
+                        <figure><img class="centro img" src="images/curva_di_koch.gif" name="Curva di Koch"
+                                alt="CURVA DI KOCH" />
+                        </f>
+                        <ol>
+                            <li>
+                                <p>si prende un triangolo con lati di lunghezza 1;</p>
+                            <li>
+                                <p>a metà di ciascun lato si aggiunge un nuovo triangolo di
+                                    lato pari a 1/3 di quello del triangolo precedente;</p>
+                            <li>
+                                <p>lo stesso si fa per i lati liberi di ciascun triangolo.
+                                </p>
+                        </ol>
+
+                        <p>
+                            Ad ogni passaggio la lunghezza del confine si
+                            incrementa costantemente di 1 (da 3 a 4) e quindi <strong>tende all'infinito</strong>,
+                            nonostante che l'area della figura frattale rimanga inferiore
+                            all'area del cerchio circoscritto al triangolo di partenza. La
+                            dimensione viene calcolata in questo caso come rapporto fra i
+                            logaritmi. </p>
+
+                        <p class="centro"><em>D = log 4 / log 3 = 1.2628...</em></p>
+                        <br>
+                        <p><em>Autosomiglianza e dimensioni frattali tendono ad andare di pari
+                                passo.</em></p>
+
+                        <figure><img class="centro img3" src="images/1024px-Sierpinski_carpet_5.svg.png"
+                                name="Il tappeto di Sierpinski" alt="IL TAPPETO DI SIERPINSKI" />
+                        </figure>
+
+
+                        <h3>L'insieme di Mandelbrot</h3>
+                            <figure>
+                                <img class="centro img" src="images/insieme_di_Mandelbrot_1024_72.jpg"
+                                alt="INSIEME DI MANDELBROT" />
+                            </figure>
+                        <h4>L'iterazione</h4>
+                        <figure><img class="centro " src="images/iterazione.gif" alt="Iterazione"
+                                name="Iterazione" />
+                        </figure>
+
+                        <p>L'iterazione
+                            è il procedimento fondamentale che permette di studiare, con il
+                            computer, l'evoluzione di un modello matematico.</p>
+
+                        <p>L'iterazione ha inizio a partire da un valore iniziale, detto
+                            <em>seme</em>, che rappresenta lo stato iniziale del sistema. Quando lo stato
+                            del sistema è descritto da due variabili, è rappresentabile con un
+                            punto su un piano; quando le variabili di stato sono tre abbiamo un
+                            punto in uno spazio a tre dimensioni, e così via.
+                        </p>
+                        <p>
+                            Lo spazio nel quale
+                            viene rappresentata l'evoluzione del sistema è chiamato <em>spazio delle
+                                fasi</em>.
+                        </p>
+                        <p>Una volta definite le
+                            operazioni che regolano il procedimento iterativo, lo stato finale
+                            dipende solo dallo stato iniziale, ossia dal punto rappresentativo
+                            dello stato iniziale del sistema. Il punto rappresentativo,
+                            durante l'evoluzione del sistema, percorre una <em>traiettoria</em> nello
+                            spazio delle fasi.</p>
+                        <figure>
+                            <img class="centro" src="images/traiettoria_spazio_fasi.png"
+                                name="Traiettoria" alt="Traiettoria nello spazio delle fasi" />
+                        
+                            <p class="centro">
+                                Traiettoria del punto rappresentativo dello stato di un sistema
+                            </p>
+                        </figure>
+                        <p>Facciamo un esempio.
+                            L'iterazione che prende un punto P del piano, ne calcola la
+                            distanza dall'origine, ed elevandola al quadrato ottiene il punto
+                            successivo, e così via per un numero infinito di volte, conduce
+                            ad una frontiera molto semplice, costituita dalla circonferenza di
+                            raggio 1. Tutti i punti interni alla circonferenza finiranno con
+                            il convergere verso l'origine, tutti i punti esterni alla
+                            circonferenza fuggono verso l'infinito, tutti i punti sulla
+                            circonferenza rimarranno sulla circonferenza. I punti sulla
+                            circonferenza sono la frontiera tra due regioni che presentano un
+                            comportamento dinamico radicalmente diverso.</p>
+
+                        <p><img class="centro" src="images/regioni_spazio_fasi.png"
+                                name="Regioni" alt="Regioni nello spazio delle fasi" />
+                        </p>
+                        <p>
+                            Il
+                            punto A precipita nell'origine, il punto B resta sempre dove si
+                            trova, il punto C fugge verso l'infinito. I punti che precipitano
+                            sull'origine sono colorati in rosso. In blu i punti della
+                            fontiera.
+                        </p>
+
+                        <p>Le immagini frattali non sono altro che rappresentazioni di questo
+                            tipo, le quali presentano una caratteristica aggiuntiva, che le rende
+                            estremamente interessanti: nel caso dei frattali, la frontiera tra
+                            regioni di punti che presentano un comportamento dinamico diverso, è
+                            molto strana, di una stranezza che la fa apparire complicata, ma che
+                            nasconde qualcosa di più della semplice complicazione, qualcosa di
+                            concettualmente nuovo, che impareremo a chiamare<strong> complessità</strong>.
+                        </p>
+                        <p>L'esempio successivo è fondamentale. Esso, infatti, ci introduce
+                            nel mondo dei frattali. Supponiamo di avere un sistema, per il quale
+                            abbiamo ricavato un modello matematico che, una volta discretizzato,
+                            conduce alla formula iterativa seguente:
+                        </p>
+                        <p>
+                        <em class="centro math">
+                            Z<sub>i+1</sub> = Z<sub>i</sub><sup>2</sup> + C
+                        </em></p>
+                        <p>In cui Z e C sono due numeri complessi. Per C=0, la situazione è
+                            identica a quella dell'esempio precedente: Il confine tra l'insieme
+                            dei punti per cui l'iterazione diverge e l'insieme dei punti per cui
+                            l'iterazione converge verso un punto fisso (l'origine), è la
+                            circonferenza di raggio unitario del piano complesso.</p>
+                        <p>Per il
+                            momento assumiamo che il valore iniziale di Z, che d'ora in avanti
+                            chiameremo<strong> seme</strong>, sia sempre zero. Il nostro scopo diventa allora
+                            quello di studiare l'evoluzione dell'iterazione precedente al variare
+                            del parametro C, sempre con lo stesso seme.
+                        </p>
+
+                        <p>
+                            Ovviamente,
+                            poiché l'iterazione non può essere condotta fino all'infinito,
+                            occorre imporre un limite. Assumiamo dunque di ripetere l'iterazione
+                            per 150 volte, e di discriminare i valori di C per cui, dopo 150
+                            iterazioni, il modulo del numero complesso ottenuto è minore di una
+                            certa quantità, per esempio minore di 2. Il parametro C viene fatto
+                            variare all'interno di un rettangolo. Assumendo come vertici del
+                            rettangolo gli estremi (-2.25,0.75) sull'asse reale e (-1.5,1.5)
+                            sull'asse immaginario, e di colorare in nero i punti (valori di C)
+                            per cui dopo 150 iterazioni il modulo è maggiore di 2, si ottiene la seguente
+                            figura:
+                        </p>
+                        <p><img class="centro img3" src="images/mandelbrot_1.gif"
+                                name="Mandelbrot" alt="Insieme di Mandelbrot"/>
+                        </p>
+                        <p>
+                            Si tratta, evidentemente, dell'<strong>insieme
+                                di Mandelbrot</strong> in bianco e nero. Per ottenerlo a colori il trucco è
+                            quello di assegnare un colore per i punti che soddisfano la
+                            condizione dopo 150 iterazioni, un altro colore per quelli che la
+                            soddisfano dopo 149, e così via.
+                        </p>
+                        <p>
+                            Prendiamo
+                            ora un punto qualsiasi sull'insieme di Mandelbrot e Indichiamolo con
+                            il simbolo Cp. Il suo colore, in questa discussione, è ininfluente.
+                            Sia, ad esempio: 
+                        <em class="centro math2">Cp = -0.12375+0.56508i</em></p>
+                        <p><img class="centro img3" src="images/mandelbrot_2.gif"
+                            name="Punto Mandelbrot" alt="Punto sull'insieme di Mandelbrot" />
+                        </p>
+                        <p>
+                            Ripetendo
+                            l'iterazione con questo valore di C, e facendo variare invece Z,
+                            otteniamo una nuova figura. Al solito ogni punto (ogni valore di Z)
+                            viene colorato, ad esempio in bianco o nero, oppure con una scelta
+                            tra più colori, eseguendo un test sul modulo di Z dopo un certo
+                            numero di iterazioni.
+                        </p>
+                        <p>Si ottiene, in tal modo, una nuova figura, che è chiamata <strong>insieme
+                                di Julia</strong>, dal nome di Gaston Julia, un matematico che, durante la
+                            prima guerra mondiale, insieme a Pierre Fatou, ne studiò le
+                            proprietà.
+                        </p>
+                        <p>
+                            <img class="centro img3" src="images/insieme_di_julia.gif"
+                                name="Insieme di Julia" alt="Insieme di Julia" />
+                        </p>
+                        <p>
+                            Con
+                            un altro valore di C si sarebbe ottenuta una forma diversa
+                            dell'insieme di Julia associato. In sostanza, quello che per il
+                            momento ci preme sottolineare, è che l'insieme di Mandelbrot
+                            costruito con il seme: <em class="math2">  Z<sub>0</sub>=0 </em> può funzionare come indice degli insiemi
+                            di Julia. Come abbiamo visto, questi si ottengono assegnando a C un
+                            valore scelto sull'insieme di Mandelbrot, e facendo invece variare Z,
+                            all'interno di un rettangolo <em>sufficientemente ampio</em> del piano
+                            complesso. </p>
+
+                        <p> <small>
+                                N.B.: con il termine &quot;sufficientemente
+                                ampio&quot; non si intende un intervallo di dimensioni maggiori di
+                                una soglia precisa, dal momento che le relazioni tra l'insieme di
+                                Mandelbrot e gli insiemi di Julia sono di tipo <em>topologico</em>, ossia
+                                fanno riferimento alla forma, e non al dato quantitativo. Il
+                                rettangolo deve essere sufficientemente ampio in relazione al tipo di
+                                condizione imposta (numero di iterazioni e numero di possibili
+                                colori), affinché si sia in grado di cogliere a vista la struttura
+                                topologica degli insiemi ottenuti.</small>
+                        </p>
+                        <p> <img class="centro" src="images/insiemi_di_julia.gif"
+                                name="Insiemi di Julia" alt="Insiemi di Julia" /></p>
+                        <div class="centro">
+                            <p> Insiemi di Julia corrispondenti a punti dell'insieme di Mandelbrot</p>
+
+                        </div>
+
+                        <h4>L'autosomiglianza di scala</h4>
+                        <p>E' importante affrontare il problema del nome che viene dato a
+                            queste rappresentazioni. Esse vengono chiamate frattali, dal latino
+                            fractus, che significa spezzato. In effetti, la prima cosa che ci
+                            colpisce in queste immagini è la forma dei contorni, che appare
+                            estremamente frastagliata. Vi sono anche, tuttavia, delle ampie zone
+                            uniformi. Quale è la ragione di tutto ciò?</p>
+                        <p>
+                            <img class="centro img" src="images/costa_frastagliata.jpg"
+                                name="Costa frastagliata" alt="Costa frastagliata" />
+                        </p>
+                        <p>
+                            E'
+                            come se, in alcune parti della figura, si fossero scontrati due
+                            partiti, uno che voleva usare un colore, e un altro partito che
+                            voleva usarne uno diverso. E' un po' come quando il mare e la
+                            terraferma si confrontano, ora vince l'uno ora l'altro, e il
+                            risultato di questa competizione è la costa frastagliata, colma di
+                            insenature, apparentemente senza alcuna regolarità. A ben pensarci,
+                            tutta la natura è impegnata in una grande lotta, intrapresa tra
+                            tutte le sue parti. Riflettiamo ancora sulla natura della costa di un
+                            continente, che possiamo definire come la regione di confine tra il
+                            mondo acquatico e il mondo delle terre emerse. In questa regione non
+                            vi è un dominatore assoluto: <em>ad ogni livello di scala</em>, la costa
+                            mantiene questa sua proprietà di zona di confine. </p>
+                            <p>
+                            A seconda del
+                            gioco delle correnti marine, dei fenomeni di erosione, e di tutti gli
+                            altri eventi che concorrono alla dinamica del sistema mare-terraferma
+                            in un certo tratto di costa, questa può assumere, ad una certa scala
+                            dimensionale, forme diverse: può essere frastagliata, oppure
+                            lineare. Tuttavia, ad una scala dimensionale diversa, una costa molto
+                            frastagliata può apparire lineare, e, viceversa, una costa lineare
+                            può mostrare un numero insospettato di insenature e sporgenze. Ad
+                            ogni livello di scala <strong>la situazione può cambiare</strong>, e magari possiamo
+                            scoprire che un determinato motivo, ad esempio un golfo di forma
+                            semicircolare, compare e scompare in funzione della scala di
+                            rappresentazione adottata.
+                        </p>
+                        <p>La situazione, sostanzialmente, non cambia se definiamo la zona di
+                            confine in modo più astratto, come abbiamo già fatto costruendo
+                            l'insieme di Mandelbrot a due colori: In quel caso abbiamo colorato
+                            di nero i punti che, dopo 150 iterazioni, erano diventati, in modulo,
+                            maggiori di 2, e di bianco tutti gli altri. Con delle condizioni
+                            appena più complesse, possiamo colorare la zona di confine con un
+                            numero maggiore di colori.</p>
+                        <p>
+                            Possiamo interpretare l'insieme di
+                            Mandelbrot come la rappresentazione orografica di un atollo, in cui i
+                            colori sono proporzionali al livello delle terre emerse e alla
+                            profondità dei fondali. Accanto ad ampie zone regolari, notiamo che
+                            la zona di confine presenta un alto grado di <strog>irregolarità</strog>. Isoliamo
+                            allora un tratto di costa, e proviamo ad eseguire una successione di
+                            ingrandimenti, ossia una &quot;zoommata&quot;. Nell'esempio che
+                            abbiamo preparato, è possibile osservare la ripetizione di due
+                            forme: la <em>cardioide</em> e l'<em>insenatura</em>.
+                        </p>
+
+                        <p><img class="centro img" src="images/ingrandimenti_insiemi_mandelbrot.gif"
+                                name="Successivi ingrandimenti dell'insieme di Mandelbrot" title="Successivi ingrandimenti dell'insieme di Mandelbrot" alt="Successivi ingrandimenti dell'insieme di Mandelbrot" />
+                        </p>
+
+                        <p>Si noti la
+                            somiglianza alle diverse scale. Questo fenomeno è detto, per
+                            l'appunto, <strong>autosomiglianza di scala</strong>. Il fenomeno
+                            dell'autosomiglianza di scala ricorda i successivi ingrandimenti
+                            della fotografia di una costa. E' impossibile capire, dalla sola
+                            forma, a che livello di ingrandimento la foto è stata scattata.</p>
+
+
+                        <p>L'autosomiglianza di scala è un fenomeno molto diffuso in natura,
+                            e, a ben pensare, appare strano che non sia stato notato per così
+                            tanto tempo. Senza l'aiuto della matematica, forse, avrebbe
+                            continuato a sfuggire all'osservazione filosofica, e sarebbe stato un
+                            vero peccato, poiché si tratta di un concetto ricco di
+                            interpretazioni, che induce ad ipotesi molto suggestive. Esso sembra
+                            suggerirci che, sotto l'apparente diversità delle forme, si cela
+                            l'infinita ripetizione di un numero finito di motivi elementari,
+                            l'alfabeto del linguaggio della natura.</p>
+
+                        <figure class="centro"><img
+                                src="images/foglia_frattale.gif" name="Foglia frattale" alt="Foglia frattale"/>
+                            <p class="centro">
+                                Questa
+                                immagine frattale, ottenuta con un semplice algoritmo, sembra
+                                composta da un numero infinito di minuscole copie di se stessa.
+                            </p>
+                        </figure>
+                        <hr>
+                        <figure class="centro"><img src="images/1920px-Benoit_Mandelbrot_mg_1804.jpg"
+                                name="Benoit B. Mandelbrot" width=50% />
+                            <p><strong>Benoit B. Mandelbrot</strong>, (Varsavia 1924), uno dei padri
+                                fondatori della geometria frattale</p>
+                        </figure>
+
+                    </div>
+                </article>
+
+                <hr>
+            </div>
+        </div>
+        <footer>
+            <div id="sitemap">
+                <a href="home.html" title="Home page caos e frattali"> Home</a> |
+                <a href="caos.html" title="Introduzione al caos"> Introduzione</a> |
+                <a href="esempi.html" title="Esempi reali di caos"> Esempi</a> |
+                <a href="ordine.html" title="Ordine nel caos"> Ordine</a> |
+                <a href="frattali.html" title="I frattali"> Frattali</a> |
+            </div>
+            <p><a href="https://ivanodorigatti.blogspot.com" title="Sito web realizzato da Ivano Dorigatti"> Ivano
+                    Dorigatti</a></p>
+        </footer>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
