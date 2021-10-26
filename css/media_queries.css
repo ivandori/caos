@@ -1,0 +1,98 @@
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+  
+#menu {
+  background: none;
+  border: none;
+  border-radius: 0;  
+  box-shadow: none;
+  text-align: center;
+  display: none;  
+}
+  
+/* rendiamo gli elementi dei menu elementi di blocco */  
+  
+ul li {
+  display: block;
+}
+  
+/* impostiamo la larghezza massima per gli elementi dei menu e i links */  
+  
+ul li, ul li a {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
+  
+#menu li .hidden li, #menu li .hidden li a {
+  width: 100%;
+}
+
+/* rendiamo visibili gli elementi del sub menu solo al passaggio del mouse */  
+  
+#menu li .hidden li {
+  display: none;
+}
+ 
+#menu li:hover .hidden li {
+  display: block;
+}  
+
+/* aumentiamo la grandezza dei links */ 
+  
+li a {
+  font: bold 0.9em Arial, Helvetica;
+} 
+  
+/* resettiamo la posizione degli elementi del menu */  
+  
+#menu li {
+  position: static;
+}  
+  
+/* resettiamo la posizione del sub menu e lo rendiamo visibile */  
+
+#menu li .hidden {
+  position: static;
+  filter:Alpha(opacity=100); /* IE8 and earlier */
+  opacity: 1;
+  visibility: visible;
+}
+  
+/* rimuoviamo bordo e ombreggiatura dai links del menu */
+  
+#menu li a {
+  border: none;
+  box-shadow: none;  
+}  
+  
+/* nessuna animazione al passaggio del mouse */  
+  
+#menu li:hover .hidden {
+  margin: 0;
+} 
+  
+/* rimuoviamo il bordo dai links del sub menu */  
+  
+#menu li .hidden li a {
+  border: none;
+}
+  
+/*diamo un colore di sfondo agli elementi del menu e del sub menu */
+  
+#menu li {
+  background-color: black;
+}
+  
+#menu li .hidden li {
+  background-color: #003366;
+}  
+  
+/* mostriamo il pulsante del menu */
+	
+.showMenu {
+  display: block;
+}  
+  
+}

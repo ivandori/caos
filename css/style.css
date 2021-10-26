@@ -1,0 +1,309 @@
+/*reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Main style*/
+body {
+	background-color:#d8e8f5;
+	color:#303030;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:0.9em;
+}
+	a 			{color: #3e75b9;text-decoration: none;}
+	a:hover 	{color: #416695;}
+
+
+	h1 			{font-size: 32px;}
+	h2 			{font-size: 28px;}
+	h3 			{font-size: 26px;}
+	h4 			{font-size: 21px;}
+	h5 			{font-size: 18px;}
+	h6 			{font-size: 16px;}
+
+
+p {	line-height:20px;}
+
+strong { font-weight:bold;}
+
+hr {color:#d8e8f5}
+figure	{margin-bottom:10px;}
+
+p, hr, h1, h2, h3, h4, h5, h6, ol, ul {margin-bottom: 20px;}
+
+
+/*nav*/
+nav		    {width: 100%;float:left;background: #197dd1;}
+nav ul 		{margin: 0px;float:left;width:100%; list-style: none;overflow:hidden;padding:10px;text-align:center;}
+nav ul li 	{float: left;margin: 0px;position: relative;}
+nav a 		{color: #fff; display: block;font-size:14px;padding: 14px 20px;text-transform:uppercase;}
+nav a:hover {background:#d8e8f5;}
+
+
+
+/*** Header ***/
+header 		{width: 920px;float:left;padding:20px; background:#fff;color:#197dd1;}
+
+/* Struttura */
+#wrapper 		{width: 960px;margin: 0 auto;background:#fff;}
+#container		{width: 920px;float:left;padding:20px;}
+#content		{width: 100%;float:left;}
+
+/*** Post ***/
+.post 				{padding:0px;}
+.post .entry-title 	{margin-bottom: 20px; line-height:20px;}
+.post .entry-title a{font-weight: bold;letter-spacing: -1px;}
+.post .entry-content{line-height:24px;}
+
+/*barra laterale
+aside		{width: 270px;float:right;}
+.widget li 	{line-height:32px;list-style-type:none}
+*/
+
+.clear 		{clear: both;}
+.img		{width:100%;height:auto;margin-bottom:10px;}
+#sitemap    {padding-left:10px;}
+
+footer			{width:920px;float:left;padding:20px;background:#676767;color:#fff;}
+footer a 		{font:14px;color:#fff; line-height:30px;}
+footer a:hover 	{color:#d8e8f5;}
+footer p 		{padding-left:10px;}
+
+@media (min-width: 1200px) 	/* Structure > 1200px */{
+header 		{width: 1130px;float:left;padding:20px;}
+nav		    {width: 100%;float:left;display:block;}
+/*aside		{width: 420px;float:right;}*/
+footer		{width: 1130px;float:left;padding:20px;}
+#wrapper 	{width: 1170px;margin: 0 auto;}
+#container	{width: 1130px;float:left;padding:20px;}
+#content    {width: 100%;float:left;}
+
+}
+
+@media (min-width: 980px){
+	h1{ font-size: 340%; padding: 300 0; top: 600px;}
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+header 		{width: 708px;float:left;padding:20px;}
+nav		    {width: 100%;float:left;}
+/*aside		{width: 210px;float:right;}*/
+#wrapper 		{width: 748px;margin: 0 auto;}
+#container 		{width: 708px;float:left;padding:20px;}
+#content		{width: 100%;float:left;}
+footer			{width: 708px;float:left;padding:20px;}
+h1{ font-size: 260%; padding: 200 0; top: 450px;}
+}
+
+@media (max-width: 767px) {
+
+body  {padding:10px;background:#fff;}
+header {width:100%;padding: 20px 0 20px 0px;}
+nav	{width:100%;float:left;}
+#content 		{width:100%;float:left;}
+/*aside 		    {width:100%;float:right;padding: 20px 0 0 0px;}*/
+footer			{width:100%;padding:20px 0 20px 0px;}
+#wrapper 		{width:100%;margin: 0 auto;}
+#container			{width:100%;float:left;padding: 20px 0 0 0;}
+#site-title a {font-size:25px;margin-left:10px;}
+h1{ font-size: 250%;padding: 150 0;  top: 320px; }
+}
+
+@media (max-width: 480px) {
+	img {width:100%;}
+	.logo{width:40%;}
+	.icona{width:initial}
+	h1{top: 300px;}
+}
+
+.allinea{
+	text-align: center;
+}
+.centro {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+h2,h3,h4 {
+    text-transform: lowercase;
+   }
+
+h2::first-letter,h3::first-letter,h4::first-letter {
+    text-transform: uppercase;
+   }
+
+h3,h4{
+	margin-top: 40px;
+
+}
+
+
+blockquote,em {
+	font: italic 1.2em x-large Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+blockquote{
+	color: #363636;
+}
+em{
+	font-size: 1.1em;
+}
+ul {
+	list-style:disc;
+}
+ol {
+	list-style:decimal;
+}
+li 	{margin-left: 20px;}
+
+.wrapper {
+	margin-top: 25px;
+	text-align: center; /*allineare contenuto del blocco al centro */
+	}
+	.box {
+	display: inline-block; /* trasformare un elemento block in un inline-block */
+	margin-right: -0.25em; /*eliminiamo spazio tra i blocchi sulla destra */
+	padding: 5px;
+	}
+	sub {
+		font-size: x-small;
+		vertical-align: sub;
+	}
+	sup {
+		font-size: x-small;
+		vertical-align: top;
+	}
+	small{
+		font-size: smaller;
+	}
+
+.voceselezionata {font-size: medium;  color:blue;}
+
+.img3{height:250px;}
+.img4{height:200px;}
+
+
+.math {
+	font-family: freeserif, "times new roman", serif;
+	font: italic 1.2em x-large freeserif, "times new roman", serif;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.math2{
+	font-family: freeserif, "times new roman", serif;
+	font: italic 1.0em normal freeserif, "times new roman", serif;
+	text-align: center;
+	letter-spacing: 0px;
+	margin-top: 2px;
+}
+
+/* diamo uno stile al pulsante del menu e nascondiamolo */
+
+.showMenu {
+	padding: 10px 0;
+	color: white;
+	background: #0066FF;
+	text-align: center;
+	display: none;
+  }
+
+  /* nascondiamo il checkbox */
+
+  input[type=checkbox]{
+	display: none;
+  }
+
+  /* mostriamo il menu quando il checkbox viene selezionato */
+
+  input[type=checkbox]:checked ~ #menu{
+	display: block;
+  }
+
+
+  h19 {
+	margin: 0px;
+	background-image: url('../images/caos.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.527);
+	font-weight: bolder;
+	text-align: center;
+  }
+
+  h1{
+	width:97%;
+    height:100%;
+    position: absolute;
+
+    left: 7px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+	color: black;
+	background-color: transparent;
+	font-weight: bolder;
+  }
+
+
+  .h1_container---{
+	  position: relative;
+  }
+  .h1_img{
+	  opacity: 0.5;
+
+  }
+  .boxnero{
+	  background-color: rgb(36, 116, 69);
+  }
+
+  .immagine {
+	width:500px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity:0.2;
+	z-index: -1;
+  }
