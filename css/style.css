@@ -65,25 +65,6 @@ h4 			{font-size: 21px;}
 h5 			{font-size: 18px;}
 h6 			{font-size: 16px;}
 
-h1{
-	position: absolute;
-	left: 5px;
-	right: 5px;
-	transform: translate(0, -50%);
-	text-shadow: 0 0 15px;
-	background-color: transparent;
-	font-weight: bolder;
-  }
-.h1_container---{
-	  position: relative;
-  }
-.h1_img{
-	  display: block;
-	  width:100%;
-	  height:auto;
-	  opacity: 0.5;
-  }
-
 h2,h3,h4 {    text-transform: lowercase;   }
 h2::first-letter,h3::first-letter,h4::first-letter {
     text-transform: uppercase;
@@ -213,6 +194,49 @@ strong { font-weight:bold;}
 	margin-top: 2px;
 }
 
+/* 		   Immagine, titolo e descrizione breve	  	  */
+.caption {
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.caption img {
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border: none;
+	width:100%;
+}
+.caption span {
+    float: left;
+    padding: 5px;
+    width: 100%;
+    color: #dedede;
+    background: #222; /* browser che non supportano rgba */
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.caption span h1 {
+	padding-right: 5px;
+    font-size: 28px;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 0px;
+	text-shadow: 0 0 15px;
+}
+.caption span em {
+    font-size: 14px;
+	font-style: italic;
+	margin: 5px;
+}
+
 
 
 /******************************************************/
@@ -226,10 +250,8 @@ strong { font-weight:bold;}
 	#wrapper 	{width: 1170px;margin: 0 auto;}
 	#container	{width: 1130px;float:left;padding:20px;}
 	#content    {width: 100%;float:left;}
-	h1{	font-size: 340%; top: 25%;}
 }
 @media (min-width: 980px) and (max-width: 1199px){
-	h1{ font-size: 340%; 	top: 55%;}
 }
 @media (min-width: 768px) and (max-width: 979px) {
 	header 		{width: 708px;float:left;padding:20px;}
@@ -238,7 +260,6 @@ strong { font-weight:bold;}
 	#container 		{width: 708px;float:left;padding:20px;}
 	#content		{width: 100%;float:left;}
 	footer			{width: 708px;float:left;padding:20px;}
-	h1{ font-size: 260%; 	top: 33%;}
 }
 @media (max-width: 767px) {
 	body  {padding:10px;background:#fff;}
@@ -249,12 +270,10 @@ strong { font-weight:bold;}
 	#wrapper 		{width:100%;margin: 0 auto;}
 	#container			{width:100%;float:left;padding: 20px 0 0 0;}
 	#site-title a {font-size:25px;margin-left:10px;}
-	h1{ font-size: 250%; top: 60%;}
 }
 @media (max-width: 480px) {
 	/*img {width:100%;}*/
 	.logo{width:40%;}
 	.icona{width:initial}
-	h1{	top: 33%;}
 }
 /******************************************************/
