@@ -226,19 +226,19 @@ strong { font-weight:bold;}
 	#wrapper 	{width: 1170px;margin: 0 auto;}
 	#container	{width: 1130px;float:left;padding:20px;}
 	#content    {width: 100%;float:left;}
-	h1{	top: 50%;}
+	h1{	font-size: 340%; top: 25%;}
 }
-@media (min-width: 980px){
-	h1{ font-size: 340%; 	top: 40%;}
+@media (min-width: 980px) and (max-width: 1199px){
+	h1{ font-size: 340%; 	top: 55%;}
 }
-@media (min-width: 768px) and (max-width: 980px) {
+@media (min-width: 768px) and (max-width: 979px) {
 	header 		{width: 708px;float:left;padding:20px;}
 	nav		    {width: 100%;float:left;}
 	#wrapper 		{width: 748px;margin: 0 auto;}
 	#container 		{width: 708px;float:left;padding:20px;}
 	#content		{width: 100%;float:left;}
 	footer			{width: 708px;float:left;padding:20px;}
-	h1{ font-size: 260%; 	top: 35%;}
+	h1{ font-size: 260%; 	top: 33%;}
 }
 @media (max-width: 767px) {
 	body  {padding:10px;background:#fff;}
@@ -249,12 +249,12 @@ strong { font-weight:bold;}
 	#wrapper 		{width:100%;margin: 0 auto;}
 	#container			{width:100%;float:left;padding: 20px 0 0 0;}
 	#site-title a {font-size:25px;margin-left:10px;}
-	h1{ font-size: 250%; top: 30%;}
+	h1{ font-size: 250%; top: 60%;}
 }
 @media (max-width: 480px) {
 	/*img {width:100%;}*/
 	.logo{width:40%;}
 	.icona{width:initial}
-	h1{	top: 25%;}
+	h1{	top: 33%;}
 }
 /******************************************************/
